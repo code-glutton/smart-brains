@@ -1,10 +1,13 @@
 import React from 'react'
 
-export default function Rank() {
+export default function Rank({name, entries}) {
     return (
         <div>
             <div className='white f3'>
-                {`Osahon your current rank is.....`}
+                {`${name} your current rank is.....`}
+            </div>
+            <div className='white f1'>
+                {entries}
             </div>
         </div>
     )
